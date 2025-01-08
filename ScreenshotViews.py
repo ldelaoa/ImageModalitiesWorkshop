@@ -58,3 +58,5 @@ def ScreenshotViews(CT,BW_tumor,saveJPEG_Path_Px=None,struct_name=None,Px=None,S
     return False
 
   return True
+
+#_ = ScreenshotViews(CT_image,CTTumor_image,saveJPEG_Path_Px=None,struct_name="img1_",Px="001",SecondImage=None)
