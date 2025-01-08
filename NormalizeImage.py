@@ -54,3 +54,11 @@ def NormalizeImage(image,intFlag=None,saveFilename=None,originReference=None,des
 
     resampled_image = resampler.Execute(image)
     return resampled_image
+
+#To change Spacing with Linear interpolator: 
+#desiredSpacing = (x,x,x)
+#image_sitk_spaced = NormalizeImage(image_sitk,"Linear",None,originReference=None,desired_spacing=desiredSpacing,desired_Size=None,rotation=None)
+#To change Origin with Linear interpolator:
+#desiredOrigin = reference_sitk.GetOrigin()
+#image_sitk_origin = NormalizeImage(image_sitk_cropped,"Linear",None,originReference=desiredOrigin,desired_spacing=None,desired_Size=None,rotation=None)
+
