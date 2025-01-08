@@ -5,3 +5,6 @@ def RelevantHeaders(sitk_image,string):
 
   image_array = sitk.GetArrayFromImage(sitk_image)
   print(f"Min val {np.min(image_array)} Max val {np.max(image_array)}")
+
+#RelevantHeaders(ct_sitk,"CT")
+#RelevantHeaders(bw_tumor_sitk,"CT Tumor")
