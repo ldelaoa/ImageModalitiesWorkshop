@@ -12,3 +12,5 @@ def Clamp(image,lower_bound,upperbound):
     clipped_image = sitk.GetImageFromArray(clipped_array)
     clipped_image.CopyInformation(image)
     return clipped_image
+
+#clipped_ct_sitk = Clamp(ct_sitk, -500, 500)
