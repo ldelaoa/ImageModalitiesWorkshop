@@ -14,3 +14,5 @@ def NormalizeImageIntensityNumpy(image):
     normalized_image = sitk.GetImageFromArray(normalized_array)
     normalized_image.CopyInformation(image)
     return normalized_image
+
+#ct_normalized = NormalizeImageIntensityNumpy(ct_sitk)
