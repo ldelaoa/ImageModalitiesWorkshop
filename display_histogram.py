@@ -19,3 +19,5 @@ def display_histogram(sitk_image, title="Image Histogram",exclude_Lowest=False):
     plt.xlabel("Pixel Value")
     plt.ylabel("Frequency")
     plt.show()
+
+#display_histogram(ct_sitk, title="CT Image Histogram",exclude_Lowest=True)
