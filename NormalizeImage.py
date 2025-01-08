@@ -7,6 +7,8 @@
 #*   `desired_spacing`: (Optional) A list or tuple representing the desired spacing for the resampled image. If `None`, the original spacing is maintained.
 #*   `desired_Size`: (Optional) A list or tuple representing the desired size for the resampled image. If `None`, the original size is maintained.
 #*   `rotation`: (Optional) If not `None`, it will rotate the image, and is assumed to be for a specific transformation (not general rotation).
+
+#NormalizeImage allows  to change the size, spacing, origin, with different interpolation methods
 def NormalizeImage(image,intFlag=None,saveFilename=None,originReference=None,desired_spacing = None,desired_Size = None,rotation=None):
 
     if rotation is not None:
