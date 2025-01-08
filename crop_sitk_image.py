@@ -8,3 +8,6 @@ def crop_sitk_image(image, target_size):
     start_z = 0 # Assumes z-dimension is the same
     cropped_image = sitk.RegionOfInterest(image, target_size, [start_x, start_y, start_z])
     return cropped_image
+
+#target_size = image_sitk.GetSize()
+#image2_sitk_cropped = crop_sitk_image(image2_sitk, target_size)
